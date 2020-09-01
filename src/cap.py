@@ -18,7 +18,6 @@ class camera(threading.Thread):
 
     def grab(self):
         if len(self.__q) > 0:
-            print(1)
             img = self.__q.popleft()
             return True, img
         return False, None

@@ -85,3 +85,6 @@ except Exception:
 # Stop Pipeline
 pipeline.set_state(Gst.State.NULL)
 del pipeline
+
+
+# SUBSYSTEM=="usb", KERNEL=="3-4", ATTR{idVendor}=="045e", ATTR{idProduct}=="0779", SYMLINK+="foo/video10"
